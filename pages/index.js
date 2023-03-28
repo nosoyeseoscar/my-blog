@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import { Card } from '../components/Card'
+
 import { getAllFilesMetadata } from '../lib/mdx'
 
-import Link from 'next/link'
+// import Link from 'next/link'
 
 export default function Home ({ posts }) {
   return (
@@ -28,10 +30,7 @@ export default function Home ({ posts }) {
         <div className={styles.grid}>
           {posts.map((post) => {
             return (
-              <Link href={`/${post.slug}`} className={styles.card} key={post.slug}>
-                <h2>{post.title} &rarr;</h2>
-                <p>{post.date}</p>
-              </Link>
+              <Card post={post} key={post.slug} />
             )
           })}
         </div>
