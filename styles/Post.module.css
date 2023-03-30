@@ -2,3 +2,16 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+.text {
+    font-weight: bold;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.misc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
