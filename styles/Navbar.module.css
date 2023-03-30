@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    padding: 16px;
+    align-items: left;
+    background-color: #f1f1f1;
+}
+
+.items {
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.items:hover,
+.items:focus,
+.items:active {
+    color: #FFF;
+    background-color: #020910;
+    border-color: #030c16;
+}
