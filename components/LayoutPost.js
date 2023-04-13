@@ -2,6 +2,7 @@ import styles from '../styles/Post.module.css'
 import { TagsContainer } from './TagsContainer'
 import Image from 'next/image'
 import { dateFormat } from './../lib/dateFormat'
+import Link from 'next/link'
 
 export const LayoutPost = ({ children, frontmatter }) => {
   return (
@@ -31,6 +32,10 @@ export const LayoutPost = ({ children, frontmatter }) => {
         </p>
       </div>
       {children}
+      <Link className={styles.home} href='/'>
+        <Image src='/home.svg' alt='home' width={50} height={50} />
+      </Link>
     </div>
+
   )
 }

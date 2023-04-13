@@ -4,16 +4,17 @@ import styles from '../styles/Footer.module.css'
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <a
-        href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        Powered by{' '}
-        <span className={styles.logo}>
-          <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-        </span>
-      </a>
+      <div>
+        <a target='_blank' href='https://twitter.com/nosoyeseoscar' rel='noopener noreferrer'>
+          <Image src='/twitter.svg' alt='twitter' width={30} height={30} />
+        </a>
+        <a className={styles['github-icon']} target='_blank' href='https://github.com/nosoyeseoscar' rel='noopener noreferrer'>
+          <Image src='/github.svg' alt='github' width={30} height={30} style='margin-left:10px' />
+        </a>
+      </div>
+      <p>
+        ©2023 Oscar Fuentes
+      </p>
     </footer>
   )
 }

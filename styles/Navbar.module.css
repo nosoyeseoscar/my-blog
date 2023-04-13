@@ -1,12 +1,19 @@
 .nav {
+    border-bottom: 1px solid #eaeaea;
     display: flex;
-    padding: 16px;
-    align-items: left;
-    background-color: #f1f1f1;
+    justify-content: center;
+}
+
+.links-container {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .items {
-    padding: 5px 10px 5px 10px;
+    padding: 10px 25px;
     border-radius: 5px;
 }
 
